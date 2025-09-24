@@ -1,0 +1,19 @@
+var menuIcon = document.querySelector('.menu-icon');
+var navLinks = document.querySelector('.nav-links');
+
+menuIcon.addEventListener('click', function(){
+    navLinks.classList.toggle('open');
+})
+
+var menuFlag = 0;
+
+menuFlag = 0
+menuIcon.addEventListener('click', function(){
+    if( menuFlag == 0 ){ 
+        navLinks.style.display = 'flex';
+        menuFlag = 2;
+    } else {
+        navLinks.style.display = 'none';
+        menuFlag = 0;
+    }
+})
